@@ -60,11 +60,14 @@ public class MedicTerran extends Terran
         }
     }
         //combate
-        if(isTouching(MedicZerg.class)&& Greenfoot.getRandomNumber(10)==3)
+        if(isTouching(MedicZerg.class)&& Greenfoot.getRandomNumber(100)==3)
         {
-            
+             World myWorld = getWorld();
+             Mapa mapa = (Mapa)myWorld;
+             EnergiaTerran energy = mapa.getEnergiaTerran(); 
+             energy.removenergy();
              getWorld().removeObjects(getWorld().getObjects(MedicTerran.class));
-           
+            
         }
         }
 }
