@@ -32,6 +32,21 @@ public class GuerreroTerran extends Terran
         if(Greenfoot.isKeyDown("down")){
             if(getY()<600){
         setLocation(getX(),getY()+1);}
+    }
+    //Curacion
+    if (isTouching(MedicTerran.class))
+        {
+             
+             
+             
+            
         }
-    }    
+    
+    
+    }
+    
+   //Curacion
+  
+   
+    
 }

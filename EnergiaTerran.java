@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class EnergiaTerran extends Counter
 {
-    int energy = 100;
+    int energy = 1000;
     int menos = -20;
     /**
      * Act - do whatever the EnergiaTerran wants to do. This method is called whenever
