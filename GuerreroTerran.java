@@ -14,23 +14,24 @@ public class GuerreroTerran extends Terran
      */
     public void act() 
     {
+        //movimiento del personaje
         if(Greenfoot.isKeyDown("right")){
-        if(getX()<800){
+        if(getX()<900){
             setLocation(getX()+1,getY());
         }
         }
         if(Greenfoot.isKeyDown("left")){
-        if(getX()<800){
+        if(getX()<900){
             setLocation(getX()-1,getY());
         }
         }
         if(Greenfoot.isKeyDown("up")){
-        if(getY()<600){
+        if(getY()<1000){
             setLocation(getX(),getY()-1);
         }
         }
         if(Greenfoot.isKeyDown("down")){
-            if(getY()<600){
+            if(getY()<1000){
         setLocation(getX(),getY()+1);}
     }
     //Curacion
@@ -41,6 +42,7 @@ public class GuerreroTerran extends Terran
              
             
         }
+<<<<<<< HEAD
     
     
     }
@@ -49,4 +51,32 @@ public class GuerreroTerran extends Terran
   
    
     
+=======
+        //encuentro con objeto
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("right"))
+        {
+           if(getX()<900){
+            setLocation(getX()-1,getY());
+        }
+        }
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("left"))
+        {
+           if(getX()<900){
+            setLocation(getX()+1,getY());
+        }
+        }
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("up"))
+        {
+           if(getX()<1000){
+            setLocation(getX(),getY()+1);
+        }
+        }
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("down"))
+        {
+           if(getX()<1000){
+            setLocation(getX(),getY()-1);
+        }
+        }
+    }    
+>>>>>>> master
 }
