@@ -20,8 +20,10 @@
             //creacion de un objeto
             MedicTerran medicT1= new MedicTerran();
             ConstructorTerran consT1=new ConstructorTerran();
+            //MedicTerran medicT2= new MedicTerran();
             //agragar objeto
             addObject(medicT1, 170, 500);
+            //addObject(medicT2, 120, 500);
             //addObject(consT1, 254,538);
             
            

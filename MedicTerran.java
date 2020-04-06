@@ -1,4 +1,4 @@
- import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class MedicTerran here.
@@ -38,29 +38,32 @@ public class MedicTerran extends Terran
         setLocation(getX(),getY()+1);}
         }
         //encuentro con objeto
-        if(isTouching(Arbol.class))
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("right"))
         {
            if(getX()<900){
-            setLocation(getX(),getY());
+            setLocation(getX()-1,getY());
         }
-        if(Greenfoot.isKeyDown("left")){
-        if(getX()<900){
+        }
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("left"))
+        {
+           if(getX()<900){
             setLocation(getX()+1,getY());
-            
         }
         }
-        if(Greenfoot.isKeyDown("up")){
-        if(getY()<1000){
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("up"))
+        {
+           if(getX()<1000){
             setLocation(getX(),getY()+1);
         }
         }
-        if(Greenfoot.isKeyDown("down")){
-            if(getY()<1000){
-        setLocation(getX(),getY()-1);}
+        if(isTouching(Arbol.class)&& Greenfoot.isKeyDown("down"))
+        {
+           if(getX()<1000){
+            setLocation(getX(),getY()-1);
         }
-    }
+        }
         //combate
-        if(isTouching(MedicZerg.class)&& Greenfoot.getRandomNumber(10)==3)
+        if(isTouching(MedicZerg.class)&& Greenfoot.getRandomNumber(100)==3)
         {
             
              getWorld().removeObjects(getWorld().getObjects(MedicTerran.class));
