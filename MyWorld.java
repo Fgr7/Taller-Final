@@ -19,7 +19,7 @@
             super(1000, 900, 1); 
             //creacion de un objeto
             MedicTerran medicT1= new MedicTerran();
-            ConstructorTerran consT1=new ConstructorTerran();
+            //ConstructorTerran consT1=new ConstructorTerran();
             //MedicTerran medicT2= new MedicTerran();
             //agragar objeto
             addObject(medicT1, 170, 500);
